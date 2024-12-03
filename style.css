@@ -1,0 +1,206 @@
+/* estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(7, 53, 51);
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* cabeçalho */
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: rgb(90, 90, 92);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: rgb(235, 231, 238);
+    transform: scale(1.2);
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+header img {
+    height: 120px;
+    width: 120px;
+}
+
+/* Estilo topo */
+section .topo {
+    padding: 40px 4%;
+}
+
+section .topo .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo h1 {
+    color: beige;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+main img {
+    height: 400px;
+    width: 400px;
+}
+
+.topo .txt-topo-site p {
+    color: rgb(221, 78, 121);
+    margin: 40px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.img-topo img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 20px; 
+    }
+}
+
+/* Estilo produtos */
+.produtos {
+    padding: 20px;
+    background-color: #b9cecc;
+    text-align: center;
+}
+
+.produtos h2 {
+    font-size: 250%;
+    color: #333;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 30px;
+}
+
+.produtos-box {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.produtos p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center; /* Corrigido align-items */
+    color: #17410d;
+}
+
+.produtos-box img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.produtos-box img:hover {
+    transform: scale(1.1);
+}
+
+/* Rodapé */
+footer {
+    background-color: #082e07;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    color: #b9cecc;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer p:hover {
+    color: #fff;
+}
+
+/* Formulário */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #17410d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/*sobre nos*/
+
+.sobre-nos {
+    padding: 40px 4%;
+    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sobre-nos p {
+    font-size: 18px;
+  
+    text-align: justify;
+    margin-bottom: 20px;
+    
+}
+
+
